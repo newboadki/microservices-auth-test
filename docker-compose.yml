@@ -1,0 +1,11 @@
+services:
+  auth-service:
+    build: ./simple-express-authentication-service
+    ports:
+      - "3000:3000"
+      - "3080:3080"
+  books:
+    build: ./simple-express-books-service
+    ports:
+      - "4000:4000"
+      - "5000:5000"
